@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>All about finding the best baby names</h1>
+        <h1 className="header">All about awesome baby names</h1>
         <GirlsNames girlsNames={babyNames}/>
         <BoysNames boysNames={babyNames}/>
       </header>

@@ -6,15 +6,47 @@
   height: 40vmin;
   pointer-events: none;
 }
-
-.boys-names li{
+.header {
+  padding: 0.1em 1em;
+  color: rgb(248, 246, 248);
+  text-shadow: 3px 3px 4px black;
+}
+.names ul li{
   display: inline-block;
   margin: 0.5em;
 }
-.boys-names {
+.names {
   display: block;
   width: 95%;
 }
+.girls-header {
+  color: rgb(9, 214, 241);
+  padding: 0.5em 0 0.5em 0;
+  background-color: rgb(37, 39, 35);
+  background-color: rgb(32, 5, 58);
+}
+
+.boys-header {
+  color: rgb(247, 223, 11);
+  padding: 0.5em 0 0.5em 0;
+  background-color: rgb(185, 5, 5);
+}
+.girls-names {
+  color: rgb(9, 214, 241);
+  padding: 0.1em 0.5em;
+  background-color: rgb(37, 39, 35);
+  background-color: rgb(32, 5, 58);
+}
+
+.boys-names {
+  color: rgb(247, 223, 11);
+  padding: 0.1em 0.5em;
+  background-color: rgb(185, 5, 5);
+}
+.boys-names-container {
+  margin-top: 1rem;
+}
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -23,7 +55,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #05534f;
   min-height: 100vh;
   display: flex;
   flex-direction: column;

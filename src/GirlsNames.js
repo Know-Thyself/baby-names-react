@@ -1,12 +1,15 @@
 import React from "react";
 
 const GirlsNames = (props) => {
+    const filteredGirlsNames = props.girlsNames.filter(kids => kids.sex === 'f').map(girls => girls.name); 
+    const alphabeticallySortedGirlsNames = filteredGirlsNames.sort();
     return (
-        <div className="boys-names">
-            <h3>Awesome Girls Names</h3>
-            {props.girlsNames.filter(kids => kids.sex === 'f').map(girls => (
-                <li>{girls.name}</li>
+        <div className="names girls-names-container">
+            <h3 className="girls-header">Awesome Girls Names</h3>
+            <ul>{alphabeticallySortedGirlsNames.map(girl => (
+                <li className="girls-names">{girl}</li>
             ))}
+            </ul>
         </div>
     )
 }
