@@ -5,6 +5,9 @@
   height: 40vmin;
   pointer-events: none;
 }
+.baby-name-search {
+  font-size: 1.1em;
+}
 .names ul li{
   display: inline-block;
   margin: 0.5em;
@@ -14,8 +17,8 @@
   width: 97%;
 }
 .names-header {
-  color: rgb(102, 11, 11);
-  text-shadow: 2px 2px 2px rgb(31, 175, 185);
+  color: rgb(204, 197, 115);
+  text-shadow: 2px 2px 2px rgb(2, 20, 36);
 }
 .f {
   color: rgb(245, 238, 180);
