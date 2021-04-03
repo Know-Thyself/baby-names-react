@@ -13,7 +13,7 @@ const BoysAndGirlsNames = (props) => {
   }) 
 
   function handleSearchInput (e) {
-    setSearchInput(e.target.value);
+    setSearchInput(e.target.value.toLowerCase());
 
     const filteredSearch = babyNames.filter(kid => {
       return kid.name.toLowerCase().includes(searchInput);
