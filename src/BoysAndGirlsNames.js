@@ -21,7 +21,7 @@ const BoysAndGirlsNames = (props) => {
       return kid.name.toLowerCase().includes(searchInput);
     });
     setBabyNames(filteredSearch);
-    if (e.target.value === "") window.location.reload();
+    if (e.target.value === "") setBabyNames(props.babyNames);
   }
     
   const favoritesListHandler = (id) => {
@@ -70,7 +70,8 @@ const BoysAndGirlsNames = (props) => {
       </div>
 
       <div key="input-field" className="col">
-        <form key="input-form">
+        <div key="input-form" className="search-input-wrapper">
+          <i class="fas fa-search"></i>
           <input 
             key="search-input "
             type="text"
@@ -79,12 +80,11 @@ const BoysAndGirlsNames = (props) => {
             value={searchInput}
             onChange={handleSearchInput}
           />
-        </form>
+        </div>
   
         <div key="radio" className="radio-container">{categories.map((category, index) => (
           <>
             <input className="radio-input" key={index} type="radio" value={category} name="selector" id={category} checked={gender === category} onChange={(e) => {setGender(e.target.value)}} onClick={RadioButtonsToggler}/><label key={category} htmlFor={category} className="radio-label">{category}</label>
-            
           </>
           ))}
         </div>

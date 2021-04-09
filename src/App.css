@@ -1,3 +1,5 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css);
+
 .App {
   text-align: center;
 }
@@ -30,12 +32,30 @@
   margin: auto;
   margin-bottom: 1em;
 }
+.search-input-wrapper {
+ background-color: aliceblue;
+ display: flex;
+ width: 40%;
+ align-items: center;
+ justify-content: space-around;
+ margin: auto;
+ color: aliceblue;
+ padding: 0.3em;
+ border-radius: 0.2em;
+}
 
 .search-bar {
   background-color: aliceblue;
-  padding: 0.25em 0 0.25em 0.5em;
-  border-radius: 0.25em;
   font-size: 0.9em;
+  border-radius: 0.25em;
+  padding-left: 0.5em;
+  width: 100%;
+  border: none;
+  outline: none;
+}
+
+.fa-search {
+  color: rgb(133, 136, 138);
 }
 
 .radio-container {
@@ -95,4 +115,10 @@
   cursor: pointer;
   border-radius: 0.2em;
   border-style: hidden;
+}
+
+@media screen and (min-width: 960px) {
+  .search-input-wrapper {
+    width: 20%;
+  }
 }
