@@ -1,125 +1,162 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css);
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Lato:wght@300;400;700&family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600&family=Righteous&display=swap');
 
-.App {
-  text-align: center;
-}
-
-.App-header {
-  background-color: #163249;
-  background-color: #77866c;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.main {
+    background-color: #e6bea8;
+    min-height: 100vh;
+    font-size: calc(10px + 2vmin);
+    padding-bottom: 4rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    align-items: center;
+    text-align: center;
 }
 
 .names-header {
-  color: rgb(195, 210, 255);
-}
-
-.section-header {
-  color: cornsilk;
+    font-family: 'Courgette', cursive;
+    background-color: #323238;
+    color: #F8BF38;
+    font-weight: 900;
+    align-self: center;
+    margin: 0 auto;
+    padding: 0.5rem 0;
 }
 
 .favorite-names {
-  background-color: #457092;
-  padding: 0.1em;
-  width: 80vw;
-  display: block;
-  justify-content: center;
-  align-content: center;
-  margin: auto;
-  margin-bottom: 1em;
+    margin: 0 0 1rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F8BF38;
 }
+
+.section-header {
+    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    color: cornsilk;
+    color: black;
+    align-self: center;
+}
+
+.favorites-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border: solid 2px #950740;
+    width: 100%;
+}
+
+.fa-x {
+    font-size: 1rem;
+    padding: 0.1em 0 0.1em 0.4em;
+    border-left: solid 2px #F8BF38;
+    color: white;
+    align-self: center;
+    margin-left: 0.5rem;
+    line-height: inherit;
+}
+
 .search-input-wrapper {
- background-color: aliceblue;
- display: flex;
- width: 40%;
- align-items: center;
- justify-content: space-around;
- margin: auto;
- color: aliceblue;
- padding: 0.3em;
- border-radius: 0.2em;
+    background-color: aliceblue;
+    display: flex;
+    width: 40%;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+    color: aliceblue;
+    padding: 0.3em;
+    border-radius: 0.2em;
 }
 
 .search-bar {
-  background-color: aliceblue;
-  font-size: 0.9em;
-  border-radius: 0.25em;
-  padding-left: 0.5em;
-  width: 100%;
-  border: none;
-  outline: none;
+    background-color: aliceblue;
+    font-size: 0.9em;
+    border-radius: 0.25em;
+    padding-left: 0.5em;
+    width: 100%;
+    border: none;
+    outline: none;
 }
 
 .fa-search {
-  color: rgb(133, 136, 138);
+    color: rgb(133, 136, 138);
 }
 
 .radio-container {
-  display: inline-flex;
-  overflow: hidden;
-  border-radius: 0.2em;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
-  margin-top: 1em;
+    display: inline-flex;
+    overflow: hidden;
+    border-radius: 0.2em;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+    margin-top: 1em;
 }
 
 .radio-input {
-  display: none;
+    display: none;
 }
 
 .radio-label {
-  padding: 0.3em 0.6em;
-  font-size: 1em;
-  color: rgb(100, 44, 93);
-  background-color: rgb(45, 104, 72);
-  background-color: #457092;
-  cursor: pointer;
-  transition: background 0.1s;
+    padding: 0.3em 0.6em;
+    font-size: 1em;
+    background-color: #24305e;
+    color: white;
+    cursor: pointer;
+    transition: background 0.1s;
+}
+
+.radio-label:hover {
+    background-color: #950740;
 }
 
 .radio-label:not(:last-of-type) {
-  border-right: 0.2em solid rgb(66, 49, 49);
+    border-right: 0.2em solid #F8BF38;
 }
 
-.radio-input:checked + .radio-label {
-  background-color: #b7defc;;
+.radio-input:checked+.radio-label {
+    background-color: #950740;
+    color: white;
 }
 
-.names ul li {
-  display: inline-block;
-  margin: 0.5em;
-}
 .names {
-  display: block;
-  width: 97%;
+    width: 90%;
+    margin: auto;
+    background-color: #3871F8;
 }
 
-.f .favorite-button {
-  padding: 0.1em 0.4em 0.1em 0.4em;
-  font-size: 1em;
-  background-color: rgb(178, 195, 248);
-  color: rgb(4, 21, 70);
-  cursor: pointer;
-  border-radius: 0.2em;
-  border-style: hidden;
+.baby-names {
+    gap: 1rem;
+    padding: 1rem;
+    padding-bottom: 2rem;
 }
 
-.m .favorite-button {
-  padding: 0.1em 0.4em 0.1em 0.4em;
-  font-size: 1em;
-  background-color: rgb(253, 217, 253);
-  color: rgb(58, 4, 58);
-  cursor: pointer;
-  border-radius: 0.2em;
-  border-style: hidden;
+.favorite-button {
+    margin: 0.25em;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    cursor: pointer;
+    border-radius: 0.2em;
+    border-style: hidden;
+    color: white;
+    padding: 0.1em 0.4em;
+    font-size: 1em;
+}
+
+.f {
+    background-color: #3500D3;
+}
+
+.m {
+    background-color: #950787;
 }
 
 @media screen and (min-width: 960px) {
-  .search-input-wrapper {
-    width: 20%;
-  }
+    .names-header {
+        font-size: 3rem;
+    }
+
+    .search-input-wrapper {
+        width: 30%;
+    }
 }
